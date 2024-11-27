@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links ul li a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links ul li a:hover {
+    color: #007BFF;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    background-color: #fff;
+}
+
+.page h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-top: -30vh;
+    padding: 20px;
+}
+
+.titl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav-links ul li a.active {
+    color: red;
+}
+
+
+</style>
+
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Mon-App</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/" class="active">Accueil</a></li>
+                    <li><a href="/Services">Services</a></li>
+                    <li><a href="/Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="page">
+        <div class="welcome-message">
+            <h1>Hello and welcome!</h1>
+          <p class="titl">Je vous invites à découvrir nos services</p>
+        </div>
+    </main>
+</body>
+</html>
